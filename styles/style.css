@@ -32,6 +32,7 @@ p {
 .flex-between {
   display: flex;
   justify-content: space-between;
+  gap: 100px;
 }
 .uppercase {
   text-transform: uppercase;
@@ -40,14 +41,12 @@ p {
 h1 span {
   display: block;
 }
-h1-transparent {
-    /* border: 1px solid #324254; */
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 101px;
-}
+
 h1 + p {
     margin: 32px 0 40px 0;
+}
+#logo-black {
+    margin-top: 40px;
 }
 .left-side {
   max-width: 536px;
