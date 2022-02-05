@@ -68,7 +68,6 @@ body {
 .btn-primary {
   border: 1px solid var(--btn-primary);
   background: var(--btn-primary);
-  box-shadow: 0px 26px 25px -16px var(--btn-primary-shadow);
   align-items: center;
   padding: 28px 32px;
   gap: 20px;
@@ -85,6 +84,14 @@ body {
 
   margin-top: 20px;
 }
+.btn-primary:hover {
+  transition: 0.5s;
+  box-shadow: 0px 26px 25px -16px var(--btn-primary-shadow);
+}
+.btn-secondary:hover {
+  transition: 0.5s;
+  box-shadow: 0px 26px 25px -16px var(--dark-secondary);
+}
 .center {
   display: flex;
   justify-content: center;
@@ -98,10 +105,24 @@ h2 {
 
   padding-bottom: 50px;
 }
+.p80-900 {
+  font-family: "Giroy";
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 101px;
+}
 .p24-32-medium {
   font-family: "Gilroy-Medium";
   font-size: 24px;
   font-weight: 32px;
+}
+.p24-29-medium {
+  font-family: "Gilroy-Medium";
+  font-size: 24px;
+  line-height: 29px;
+}
+.gap-252 {
+  gap: 252px;
 }
 .gap-120 {
   gap: 120px;
@@ -127,11 +148,6 @@ h1 + p {
 }
 h1 {
   color: var(--primary-black);
-  font-family: "Gilroy";
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 101px;
-
   margin-top: 64px;
 }
 
@@ -312,7 +328,16 @@ footer .big-container > div {
 .gap-52 {
   gap: 52px;
 }
+.mr-t50-b80 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.mr-t24-b52 {
+  margin-top: 24px;
+  margin-bottom: 52px;
+}
 .mail-address {
+  font-style: normal;
   text-decoration: underline;
 }
 .main-address {
