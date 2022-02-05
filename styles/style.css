@@ -221,7 +221,10 @@ h1 {
 
 /* --- seciton-1 styles// --- */
 
-/* --- seciton-2 styles --- */
+/* --- seciton-reviews styles --- */
+#reviews {
+  padding-bottom: 160px;
+}
 .card {
   width: 588px;
 
@@ -251,12 +254,20 @@ h1 {
   gap: 24px;
 }
 #reviews div.card:first-child {
-  /* transform: translate(-50%); */
+  /* position: relative;
+  left: -252px;
+  background: rgba(50, 66, 84, 0.03); */
 }
 /* --- seciton-ourteam styles --- */
-.flex-wrap {
-  display: flex;
-  flex-flow: row wrap;
+
+#ourteam {
+  padding: 70px 0;
+}
+.ourteam-content {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
 }
 
 .btn-tertiary {
@@ -265,12 +276,16 @@ h1 {
   background-color: transparent;
 
   padding: 24px 32px;
+  margin-top: 70px;
 }
 .bg-ourteam {
   background: var(--bg-ourteam);
 }
 
 /* --- seciton-faq styles --- */
+#faq {
+  padding: 160px 0;
+}
 .question img:last-child {
   display: none;
 }
